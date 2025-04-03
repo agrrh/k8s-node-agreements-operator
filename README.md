@@ -1,8 +1,10 @@
 # k8s-node-agreements-operator
-// TODO(user): Add simple overview of use/purpose
+
+[https://agrrh.com/posts/2025/k8s-operator-sdk-p1/](https://agrrh.com/posts/2025/k8s-operator-sdk-p1/)
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+
+Demo operator, see article above.
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
