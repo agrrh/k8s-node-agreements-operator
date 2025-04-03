@@ -1,0 +1,12 @@
+apiVersion: iaas.agrrh.com/v1alpha1
+kind: NodeAgreement
+metadata:
+  labels:
+    app.kubernetes.io/name: nodeagreement
+    app.kubernetes.io/instance: nodeagreement-sample
+    app.kubernetes.io/part-of: k8s-node-agreements-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: k8s-node-agreements-operator
+  name: nodeagreement-sample
+spec:
+  # TODO(user): Add fields here

@@ -1,0 +1,31 @@
+# permissions for end users to edit nodeagreements.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: nodeagreement-editor-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: k8s-node-agreements-operator
+    app.kubernetes.io/part-of: k8s-node-agreements-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: nodeagreement-editor-role
+rules:
+- apiGroups:
+  - iaas.agrrh.com
+  resources:
+  - nodeagreements
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - iaas.agrrh.com
+  resources:
+  - nodeagreements/status
+  verbs:
+  - get
